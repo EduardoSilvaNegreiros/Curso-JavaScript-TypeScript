@@ -84,7 +84,36 @@
 
 // ###############################################################
 
-const calculadora = (function () {
+// const calculadora = (function () {
+//     const operadores = {
+//         adicao(valor) {
+//             return this.valorInicial += valor;
+//         },
+//         subtracao(valor) {
+//             return this.valorInicial -= valor;
+//         },
+//         multiplicacao(valor) {
+//             return this.valorInicial !== 0 ? valor * this.valorInicial : valor;
+//         },
+//         divisao(valor) {
+//             if (valor !== 0) {
+//                 return this.valorInicial / valor;
+//             } else {
+//                 return "Erro: divisão por zero!";
+//             }
+//         },
+//     }
+//     return operadores;
+// })();
+
+// calculadora.valorInicial = 5;
+// console.log(calculadora.adicao(2)); 
+// console.log(calculadora.subtracao(3)); 
+// console.log(calculadora.multiplicacao(4));
+// console.log(calculadora.divisao(2)); 
+
+
+const calculadora =  (function () {
     const operadores = {
         adicao(valor) {
             return this.valorInicial += valor;
@@ -92,15 +121,17 @@ const calculadora = (function () {
         subtracao(valor) {
             return this.valorInicial -= valor;
         },
+        divisao(valor) {
+            if (valor) {
+                if (valor !== 0) {
+                    return this.valorInicial / valor;
+                } else {
+                    return 'Erro: divisão por zero!';
+                }
+            }
+        },
         multiplicacao(valor) {
             return this.valorInicial !== 0 ? valor * this.valorInicial : valor;
-        },
-        divisao(valor) {
-            if (valor !== 0) {
-                return this.valorInicial / valor;
-            } else {
-                return "Erro: divisão por zero!";
-            }
         },
     }
     return operadores;
