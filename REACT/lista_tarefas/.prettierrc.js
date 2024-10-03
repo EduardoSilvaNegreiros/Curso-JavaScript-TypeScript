@@ -16,4 +16,4 @@ module.exports = {
   useTabs: false,
   vueIndentScriptAndStyle: false,
   embeddedLanguageFormatting: 'off',
-};
+}
