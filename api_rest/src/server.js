@@ -1,10 +1,13 @@
-import app from './app'; // Importa a aplicação Express configurada no arquivo 'app.js'.
+// Importa a instância do aplicativo configurado no arquivo app.js
+import app from './app';
 
-const port = 3003; // Define a porta onde o servidor vai escutar as requisições.
+// Define a porta em que o servidor vai escutar
+const port = 3003;
 
+// Inicia o servidor para escutar na porta definida
 app.listen(port, () => {
-  // Inicia o servidor na porta definida e executa um callback quando o servidor estiver ativo.
-  console.log(); // Apenas imprime uma linha em branco para organizar o console.
-  console.log(`Escutando na porta ${port}`); // Exibe no console uma mensagem informando que o servidor está escutando na porta especificada.
-  console.log(`CTRL + Clique em http://localhost:${port}`); // Exibe uma URL clicável no console, permitindo acessar o servidor localmente.
+  // Exibe mensagens no console quando o servidor é iniciado com sucesso
+  console.log();
+  console.log(`Escutando na porta: ${port}`); // Informa em qual porta o servidor está rodando
+  console.log(`CTRL + Clique em http://localhost:${port}`); // Sugere ao usuário como abrir o servidor no navegador
 });
