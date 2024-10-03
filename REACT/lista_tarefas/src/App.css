@@ -9,3 +9,7 @@ body {
   font-family: sans-serif;
   background: #0a4f70;
 }
+
+button {
+  cursor: pointer;
+}
