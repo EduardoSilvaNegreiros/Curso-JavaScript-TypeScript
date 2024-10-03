@@ -1,4 +1,4 @@
-import React from "react"; //Toda vez que for usar componentes REACT, se usa import react
+import React from "react"; // Toda vez que for usar componentes REACT, se usa import react
 import './App.css';
 
 export default function App() {
