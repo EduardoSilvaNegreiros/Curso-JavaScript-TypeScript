@@ -1,9 +1,6 @@
-import { Sequelize } from 'sequelize';
-import dotenv from 'dotenv';
+"use strict";require('dotenv').config();
 
-dotenv.config();
-
-const sequelize = new Sequelize({
+module.exports = {
   dialect: 'mysql',
   host: process.env.DATABASE_HOST,
   port: process.env.DATABASE_PORT,
@@ -14,12 +11,12 @@ const sequelize = new Sequelize({
     timezone: 'America/Sao_Paulo',
   },
   timezone: 'America/Sao_Paulo',
+
   define: {
     timestamps: true,
     underscored: true,
+    underscoredAll: true,
     createdAt: 'created_at',
     updatedAt: 'updated_at',
   },
-});
-
-export default sequelize;
+};
