@@ -19,9 +19,11 @@ export default class Main extends Component {
   }
 
   render() {
+    const { novaTarefa } = this.state;
+
     return (
       <div className="main">
-        <h1>Meu componente com estado</h1>;
+        <h1>{novaTarefa}</h1>
         <form action="#">
           <input onChange={this.inputMudou} type="text" />
           <button type="submit">Enviar</button>
