@@ -1,18 +1,13 @@
 {
   "parser": "@babel/eslint-parser",
   "parserOptions": {
-    "requireConfigFile": false
+    "requireConfigFile": false,
+    "ecmaVersion": 2020,
+    "sourceType": "module"
   },
   "extends": [
     "react-app",
-    "react-app/jest",
-    "prettier"
+    "react-app/jest"
   ],
-  "plugins": [
-    "react",
-    "prettier"
-  ],
-  "rules": {
-    "prettier/prettier": "error"
-  }
+  "rules": {}
 }
