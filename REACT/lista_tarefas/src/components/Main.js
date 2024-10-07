@@ -4,15 +4,26 @@ export default class Main extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = {
+      novaTarefa: '',
+    };
+
+    this.inputMudou = this.inputMudou.bind(this);
   };
+
+
+  inputMudou(e) {
+    this.setState({
+      novaTarefa: e.target.value,
+    });
+  }
 
   render() {
     return (
       <div className="main">
         <h1>Meu componente com estado</h1>;
         <form action="#">
-          <input type="text" />
+          <input onChange={this.inputMudou} type="text" />
           <button type="submit">Enviar</button>
         </form>
       </div>
