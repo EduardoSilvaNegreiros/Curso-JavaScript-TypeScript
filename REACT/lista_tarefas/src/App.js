@@ -1,11 +1,7 @@
 import React from 'react'; // Toda vez que for usar componentes REACT, se usa import react
+import Main from './components/Main';
 import './App.css';
 
 export default function App() {
-  return (
-    <>
-      <h1>Olá Mundo!</h1>
-      <p>lorem ips</p>
-    </>
-  );
+  return <Main />;
 }
