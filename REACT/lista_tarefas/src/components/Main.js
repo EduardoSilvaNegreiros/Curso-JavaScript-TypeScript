@@ -1,16 +1,10 @@
 import React, { Component } from 'react';
 
 export default class Main extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      novaTarefa: '',
-    };
-
-    this.inputMudou = this.inputMudou.bind(this);
+  //Isso se chama class fields
+  state = {
+    novaTarefa: '',
   };
-
 
   inputMudou(e) {
     this.setState({
