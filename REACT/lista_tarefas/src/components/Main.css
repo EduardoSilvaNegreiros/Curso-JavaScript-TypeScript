@@ -26,3 +26,11 @@
   border: 1px solid #ccc;
   min-width: 80%;
 }
+
+.form button[type="submit"] {
+  border: none;
+  height: 40px;
+  width: 40px;
+  background: #f04c64;
+  color: #fff;
+}
