@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
 export default class Main extends Component {
-  //Isso se chama class fields
+  // Isso se chama class fields
   state = {
     novaTarefa: '',
   };
 
-  inputMudou(e) {
+  inputMudou = (e) => {
     this.setState({
       novaTarefa: e.target.value,
     });
@@ -24,7 +24,5 @@ export default class Main extends Component {
         </form>
       </div>
     );
-  };
+  }
 }
-
-
