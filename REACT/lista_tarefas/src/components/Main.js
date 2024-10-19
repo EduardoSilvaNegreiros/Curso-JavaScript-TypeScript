@@ -6,7 +6,7 @@ export default class Main extends Component {
     novaTarefa: '',
   };
 
-  inputMudou = (e) => {
+  handleChange = (e) => {
     this.setState({
       novaTarefa: e.target.value,
     });
@@ -19,7 +19,7 @@ export default class Main extends Component {
       <div className="main">
         <h1>{novaTarefa}</h1>
         <form action="#">
-          <input onChange={this.inputMudou} type="text" />
+          <input onChange={this.handleChange} type="text" />
           <button type="submit">Enviar</button>
         </form>
       </div>
