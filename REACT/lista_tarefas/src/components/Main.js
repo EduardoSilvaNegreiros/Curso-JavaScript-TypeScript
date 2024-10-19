@@ -23,7 +23,7 @@ export default class Main extends Component {
     return (
       <div className="main">
         <h1>Lista de tarefas</h1>
-        <form action="#">
+        <form action="#" className="form">
           <input onChange={this.handleChange} type="text" />
           <button type="submit">
             <FaPlus />
