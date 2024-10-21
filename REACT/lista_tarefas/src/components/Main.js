@@ -24,18 +24,10 @@ export default class Main extends Component {
     return (
       <div className="main">
         <h1>Lista de tarefas</h1>
-        {' '}
-        {/* Título da página */}
         <form action="#" className="form">
-          {' '}
-          {/* Formulário para adicionar tarefas */}
           <input onChange={this.handleChange} type="text" />
-          {' '}
-          {/* Input de texto para nova tarefa */}
           <button type="submit">
             <FaPlus />
-            {' '}
-            {/* Botão com ícone de adição */}
           </button>
         </form>
       </div>
