@@ -8,7 +8,12 @@ import './Main.css'; // Importa o arquivo de estilos CSS
 export default class Main extends Component {
   // Define o estado inicial da classe (novaTarefa)
   state = {
-    novaTarefa: '', // Armazena a nova tarefa
+    novaTarefa: '',
+    tarefa: [
+      'Fazer café',
+      'Beber  agua',
+      'Estudar',
+    ],
   };
 
   // Atualiza o estado conforme o input é preenchido
@@ -19,7 +24,7 @@ export default class Main extends Component {
   }
 
   render() {
-    const { novaTarefa } = this.state; // Desestrutura novaTarefa do estado
+    const { novaTarefa, tarefa } = this.state; // Desestrutura novaTarefa do estado
 
     return (
       <div className="main">
