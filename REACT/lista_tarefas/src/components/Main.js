@@ -9,7 +9,7 @@ export default class Main extends Component {
   // Define o estado inicial da classe (novaTarefa)
   state = {
     novaTarefa: '',
-    tarefa: [
+    tarefas: [
       'Fazer café',
       'Beber  agua',
       'Estudar',
@@ -24,7 +24,7 @@ export default class Main extends Component {
   }
 
   render() {
-    const { novaTarefa, tarefa } = this.state; // Desestrutura novaTarefa do estado
+    const { novaTarefa, tarefas } = this.state; // Desestrutura novaTarefa do estado
 
     return (
       <div className="main">
@@ -35,6 +35,12 @@ export default class Main extends Component {
             <FaPlus />
           </button>
         </form>
+
+        <ul className="tarefas">
+          {tarefas.map(tarefas => (
+            <li>{tarefas}</li>
+          ))}
+        </ul>
       </div>
     );
   }
