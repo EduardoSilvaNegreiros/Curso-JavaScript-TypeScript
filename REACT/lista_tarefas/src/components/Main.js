@@ -37,8 +37,8 @@ export default class Main extends Component {
         </form>
 
         <ul className="tarefas">
-          {tarefas.map(tarefas => (
-            <li>{tarefas}</li>
+          {tarefas.map((tarefa) => (
+            <li key={tarefa}>{tarefa}</li>
           ))}
         </ul>
       </div>
