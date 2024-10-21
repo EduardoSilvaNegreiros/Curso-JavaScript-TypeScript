@@ -1,11 +1,10 @@
-import React, { Component } from 'react'; // Importa React e Component para criar o componente de classe
+import React, { Component } from 'react';
 
 // Form
 import { FaPlus } from 'react-icons/fa';
 
 // Tarefas
 import { FaEdit, FaWindowClose } from 'react-icons/fa';
-
 
 import './Main.css'; // Importa o arquivo de estilos CSS
 
@@ -45,7 +44,8 @@ export default class Main extends Component {
             <li key={tarefa}>
               {tarefa}
               <div>
-
+                <FaEdit />
+                <FaWindowClose />
               </div>
             </li>
           ))}
