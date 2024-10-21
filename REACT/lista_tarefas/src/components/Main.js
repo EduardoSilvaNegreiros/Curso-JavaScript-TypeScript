@@ -8,26 +8,34 @@ import './Main.css'; // Importa o arquivo de estilos CSS
 export default class Main extends Component {
   // Define o estado inicial da classe (novaTarefa)
   state = {
-    novaTarefa: '', // Variável que armazena a nova tarefa
+    novaTarefa: '', // Armazena a nova tarefa
   };
 
-  // Função para atualizar o estado (novaTarefa) conforme o input é preenchido
+  // Atualiza o estado conforme o input é preenchido
   handleChange = (e) => {
     this.setState({
-      novaTarefa: e.target.value, // Atualiza o valor da tarefa com o input do usuário
+      novaTarefa: e.target.value, // Atualiza novaTarefa com o valor do input
     });
   }
 
   render() {
-    const { novaTarefa } = this.state; // Extrai novaTarefa do estado
+    const { novaTarefa } = this.state; // Desestrutura novaTarefa do estado
 
     return (
       <div className="main">
-        <h1>Lista de tarefas</h1> {/* Título da página */}
-        <form action="#" className="form"> {/* Formulário para adicionar tarefas */}
-          <input onChange={this.handleChange} type="text" /> {/* Input para digitar a tarefa */}
+        <h1>Lista de tarefas</h1>
+        {' '}
+        {/* Título da página */}
+        <form action="#" className="form">
+          {' '}
+          {/* Formulário para adicionar tarefas */}
+          <input onChange={this.handleChange} type="text" />
+          {' '}
+          {/* Input de texto para nova tarefa */}
           <button type="submit">
-            <FaPlus /> {/* Botão com ícone de adição */}
+            <FaPlus />
+            {' '}
+            {/* Botão com ícone de adição */}
           </button>
         </form>
       </div>
