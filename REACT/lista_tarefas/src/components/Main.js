@@ -42,7 +42,13 @@ export default class Main extends Component {
   }
 
   handleDelete = (e, index) => {
-    console.log('Delete', index);
+    const { tarefas } = this.state;
+    const novasTarefas = [...tarefas];
+    novasTarefas.splice(index, 1);
+
+    this.setState({
+      tarefas: [...novasTarefas],
+    });
   }
 
   render() {
