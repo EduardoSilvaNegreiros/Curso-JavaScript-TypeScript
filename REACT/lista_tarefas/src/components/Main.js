@@ -59,16 +59,16 @@ export default class Main extends Component {
         </form>
 
         <ul className="tarefas">
-          {tarefas.map((tarefa) => (
+          {tarefas.map((tarefa, index) => (
             <li key={tarefa}>
               {tarefa}
               <span>
                 <FaEdit
                   className="edit"
-                  onClick={this.handleEdit}
+                  onClick={(e) => this.handleEdit(e, index)}
                 />
                 <FaWindowClose
-                  onClick={this.handleDelete}
+                  onClick={(e) => this.handleDelete(e, index)}
                   className="delete"
                 />
               </span>
