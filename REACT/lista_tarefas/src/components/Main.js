@@ -21,7 +21,7 @@ export default class Main extends Component {
 
     if (tarefas === prevState.tarefas) return;
 
-    console.log('As tarefas mudaram', tarefas);
+    localStorage.setItem('tarefas', JSON.stringify(tarefas));
   }
 
   handleSubmit = (e) => {
