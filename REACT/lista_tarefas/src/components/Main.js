@@ -55,8 +55,14 @@ export default class Main extends Component {
             <li key={tarefa}>
               {tarefa}
               <span>
-                <FaEdit className="edit" />
-                <FaWindowClose className="delete" />
+                <FaEdit
+                  className="edit"
+                  onClick={this.handleEdit}
+                />
+                <FaWindowClose
+                  onClick={this.handleDelete}
+                  className="delete"
+                />
               </span>
             </li>
           ))}
