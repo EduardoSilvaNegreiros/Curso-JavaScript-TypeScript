@@ -20,6 +20,8 @@ export default class Main extends Component {
     const { tarefas } = this.state;
     let { novaTarefa } = this.state;
     novaTarefa = novaTarefa.trim();
+
+    if (tarefas.indexOf(novaTarefa) !== -1) return;
   }
 
   // Atualiza o estado conforme o input é preenchido
