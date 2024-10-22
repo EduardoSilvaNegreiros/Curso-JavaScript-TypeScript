@@ -32,6 +32,8 @@ export default class Main extends Component {
         novaTarefa: '',
       });
     } else {
+      novasTarefas[index] = novaTarefa;
+
       this.setState({
         tarefas: [...novasTarefas],
         index: -1,
