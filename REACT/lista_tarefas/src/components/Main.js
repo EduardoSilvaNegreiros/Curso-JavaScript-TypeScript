@@ -44,8 +44,8 @@ export default class Main extends Component {
             <li key={tarefa}>
               {tarefa}
               <div>
-                <FaEdit />
-                <FaWindowClose />
+                <FaEdit className="edit" />
+                <FaWindowClose className="delete" />
               </div>
             </li>
           ))}
