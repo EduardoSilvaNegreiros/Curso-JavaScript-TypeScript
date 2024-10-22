@@ -50,5 +50,11 @@
 
 .tarefas li .edit {
   margin-right: 15px;
+  color: #51c5de;
+}
+
+.tarefas li .delete {
+  margin-right: 15px;
+  color: #f04c64;
 }
 
