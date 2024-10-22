@@ -63,8 +63,13 @@
   color: #f04c64;
 }
 
+.tarefas li:hover .edit,
+.tarefas li:hover .delete {
+  color: #000;
+}
+
 .tarefas li .edit,
 .tarefas li .delete {
-  color: #000;
+  cursor: pointer;
 }
 
