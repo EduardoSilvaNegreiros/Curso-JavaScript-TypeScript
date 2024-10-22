@@ -22,6 +22,8 @@ export default class Main extends Component {
     novaTarefa = novaTarefa.trim();
 
     if (tarefas.indexOf(novaTarefa) !== -1) return;
+
+    const novasTarefas = [...tarefas];
   }
 
   // Atualiza o estado conforme o input é preenchido
