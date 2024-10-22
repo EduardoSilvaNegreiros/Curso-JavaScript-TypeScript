@@ -63,3 +63,8 @@
   color: #f04c64;
 }
 
+.tarefas li .edit,
+.tarefas li .delete {
+  color: #000;
+}
+
