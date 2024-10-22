@@ -16,6 +16,14 @@ export default class Main extends Component {
     index: -1,
   };
 
+  componentDidUpdate(prevProps, prevState) {
+    const { tarefas } = this.state;
+
+    if (tarefas === prevState.tarefas) return;
+
+    console.log('As tarefas mudaram', tarefas);
+  }
+
   handleSubmit = (e) => {
     e.preventDefault();
     const { tarefas, index } = this.state;
