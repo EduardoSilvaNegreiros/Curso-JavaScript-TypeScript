@@ -27,6 +27,7 @@ export default class Main extends Component {
 
     this.setState({
       tarefas: [...novasTarefas, novaTarefa],
+      novaTarefa: '',
     });
   }
 
@@ -38,7 +39,6 @@ export default class Main extends Component {
   }
 
   handleEdit = (e, index) => {
-    console.log('Edit', index);
   }
 
   handleDelete = (e, index) => {
