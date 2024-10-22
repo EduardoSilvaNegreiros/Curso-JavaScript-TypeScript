@@ -37,6 +37,14 @@ export default class Main extends Component {
     });
   }
 
+  handleEdit = (e, index) => {
+    console.log('Edit', index);
+  }
+
+  handleDelete = (e, index) => {
+    console.log('Delete', index);
+  }
+
   render() {
     const { novaTarefa, tarefas } = this.state; // Desestrutura novaTarefa do estado
 
