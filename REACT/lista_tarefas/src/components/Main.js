@@ -13,6 +13,7 @@ export default class Main extends Component {
   state = {
     novaTarefa: '',
     tarefas: [],
+    index: -1,
   };
 
   handleSubmit = (e) => {
@@ -39,6 +40,7 @@ export default class Main extends Component {
   }
 
   handleEdit = (e, index) => {
+    
   }
 
   handleDelete = (e, index) => {
