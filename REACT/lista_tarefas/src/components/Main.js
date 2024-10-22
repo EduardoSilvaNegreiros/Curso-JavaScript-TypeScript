@@ -15,6 +15,11 @@ export default class Main extends Component {
     tarefas: [],
   };
 
+  handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Oi');
+  }
+
   // Atualiza o estado conforme o input é preenchido
   handleChange = (e) => {
     this.setState({
