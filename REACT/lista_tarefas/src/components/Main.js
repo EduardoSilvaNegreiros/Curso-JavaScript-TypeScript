@@ -40,7 +40,12 @@ export default class Main extends Component {
   }
 
   handleEdit = (e, index) => {
-    
+    const { tarefas } = this.state;
+
+    this.setState({
+      index,
+      novaTarefa: tarefas[index],
+    });
   }
 
   handleDelete = (e, index) => {
