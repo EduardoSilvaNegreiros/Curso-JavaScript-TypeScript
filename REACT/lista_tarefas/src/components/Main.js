@@ -12,11 +12,7 @@ export default class Main extends Component {
   // Define o estado inicial da classe (novaTarefa)
   state = {
     novaTarefa: '',
-    tarefas: [
-      'Fazer café',
-      'Beber  agua',
-      'Estudar',
-    ],
+    tarefas: [],
   };
 
   // Atualiza o estado conforme o input é preenchido
@@ -32,7 +28,7 @@ export default class Main extends Component {
     return (
       <div className="main">
         <h1>Lista de tarefas</h1>
-        <form action="#" className="form">
+        <form onSubmit={this.handleSubmit} action="#" className="form">
           <input onChange={this.handleChange} type="text" />
           <button type="submit">
             <FaPlus />
