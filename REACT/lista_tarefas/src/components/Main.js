@@ -17,7 +17,9 @@ export default class Main extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Oi');
+    const { tarefas } = this.state;
+    let { novaTarefa } = this.state;
+    novaTarefa = novaTarefa.trim();
   }
 
   // Atualiza o estado conforme o input é preenchido
