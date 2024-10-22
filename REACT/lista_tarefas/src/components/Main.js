@@ -24,6 +24,10 @@ export default class Main extends Component {
     if (tarefas.indexOf(novaTarefa) !== -1) return;
 
     const novasTarefas = [...tarefas];
+
+    this.setState({
+      tarefas: [...novasTarefas, novaTarefa],
+    });
   }
 
   // Atualiza o estado conforme o input é preenchido
