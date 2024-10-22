@@ -46,6 +46,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px;
+}
+
+.tarefas li:hover {
+  background: #51c5de;
 }
 
 .tarefas li .edit {
