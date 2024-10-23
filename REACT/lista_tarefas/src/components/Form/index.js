@@ -3,13 +3,13 @@ import { FaPlus } from 'react-icons/fa';
 
 import './Form.css';
 
-export default function Form() {
+export default function Form(props) {
   return (
-    <form onSubmit={this.handleSubmit} action="#" className="form">
+    <form onSubmit={props.handleSubmit} action="#" className="form">
       <input
-        onChange={this.handleChange}
+        onChange={props.handleChange}
         type="text"
-        value={novaTarefa}
+        value={props.novaTarefa}
       />
       <button type="submit">
         <FaPlus />

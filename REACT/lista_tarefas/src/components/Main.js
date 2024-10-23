@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 // Tarefas
 import { FaEdit, FaWindowClose } from 'react-icons/fa';
 
+import './Form';
+
 import './Main.css'; // Importa o arquivo de estilos CSS
 
 export default class Main extends Component {
@@ -85,6 +87,8 @@ export default class Main extends Component {
     return (
       <div className="main">
         <h1>Lista de tarefas</h1>
+
+        <Form />
 
         <ul className="tarefas">
           {tarefas.map((tarefa, index) => (
