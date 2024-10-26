@@ -21,4 +21,6 @@ export default function Form({ handleChange, handleSubmit, novaTarefa }) {
 // Define tipos de propriedades esperadas e marca 'handleChange' como obrigatório
 Form.propTypes = {
   handleChange: PropTypes.func.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
+  novaTarefa: PropTypes.func.isRequired,
 };
