@@ -1,28 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FaPlus } from 'react-icons/fa'; // Importa o ícone "plus" (FaPlus) da biblioteca react-icons.
-
-import './Form.css'; // Importa o arquivo CSS para estilização do formulário.
+import { FaPlus } from 'react-icons/fa'; // Ícone "plus" da biblioteca react-icons.
+import './Form.css'; // Estilos CSS para o formulário.
 
 export default function Form({ handleChange, handleSubmit, novaTarefa }) {
   return (
-    // Formulário que executa 'handleSubmit' quando o formulário é enviado (onSubmit).
-    <form onSubmit={handleSubmit} action="#" className="form">
-      {/* Campo de texto que chama 'handleChange' sempre que o conteúdo do input mudar. */}
+    <form onSubmit={handleSubmit} action="#" className="form"> {/* Envia o formulário ao chamar 'handleSubmit' */}
       <input
-        onChange={handleChange}
+        onChange={handleChange} // Atualiza o estado com o novo valor do input
         type="text"
-        value={novaTarefa} // O valor do input é controlado pela variável 'novaTarefa'.
+        value={novaTarefa} // Controla o valor do input
       />
-      {/* Botão de submit que exibe o ícone FaPlus e submete o formulário. */}
-      <button type="submit">
-        <FaPlus />
+      <button type="submit"> {/* Botão de envio do formulário */}
+        <FaPlus /> {/* Ícone de adição */}
       </button>
     </form>
   );
 }
 
-// Define os tipos de propriedades esperadas e marca 'handleChange' como obrigatório.
+// Define tipos de propriedades esperadas e marca 'handleChange' como obrigatório
 Form.propTypes = {
   handleChange: PropTypes.func.isRequired,
 };
