@@ -1,0 +1,23 @@
+import React from 'react';
+
+export default function Tarefas() {
+  return (
+    <ul className="tarefas">
+      {tarefas.map((tarefa, index) => (
+        <li key={tarefa}>
+          {tarefa}
+          <span>
+            <FaEdit
+              className="edit"
+              onClick={(e) => this.handleEdit(e, index)}
+            />
+            <FaWindowClose
+              onClick={(e) => this.handleDelete(e, index)}
+              className="delete"
+            />
+          </span>
+        </li>
+      ))}
+    </ul>
+  );
+}
