@@ -92,23 +92,6 @@ export default class Main extends Component {
           novaTarefa={novaTarefa}
         />
 
-        <ul className="tarefas">
-          {tarefas.map((tarefa, index) => (
-            <li key={tarefa}>
-              {tarefa}
-              <span>
-                <FaEdit
-                  className="edit"
-                  onClick={(e) => this.handleEdit(e, index)}
-                />
-                <FaWindowClose
-                  onClick={(e) => this.handleDelete(e, index)}
-                  className="delete"
-                />
-              </span>
-            </li>
-          ))}
-        </ul>
       </div>
     );
   }
