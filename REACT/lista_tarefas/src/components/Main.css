@@ -1,57 +1,54 @@
 .main {
-  background: #fff;
-  padding: 30px;
-  margin: 50px auto;
-  max-width: 500px;
-  border-radius: 4px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #fff; /* Fundo branco para o container principal */
+  padding: 30px; /* Espaçamento interno (padding) */
+  margin: 50px auto; /* Centraliza o container horizontalmente */
+  max-width: 500px; /* Define a largura máxima */
+  border-radius: 4px; /* Bordas arredondadas */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve para o efeito de elevação */
 }
 
 .main h1 {
-  font: 20px;
-  text-align: center;
+  font-size: 20px; /* Tamanho da fonte do título */
+  text-align: center; /* Alinha o título ao centro */
 }
 
-
 .tarefas {
-  margin-top: 30px;
+  margin-top: 30px; /* Espaçamento acima da lista de tarefas */
 }
 
 .tarefas li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  transition: all 600ms;
+  display: flex; /* Define layout flexível para os itens da lista */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  justify-content: space-between; /* Espaça os itens igualmente */
+  padding: 10px; /* Espaçamento interno nos itens da lista */
+  transition: all 600ms; /* Suaviza transições para todos os elementos */
 }
 
 .tarefas li:hover {
-  background: #51c5de;
-}
-
-.tarefas li .edit {
-  margin-right: 15px;
-  color: #51c5de;
-}
-
-.tarefas li .delete {
-  margin-right: 15px;
-  color: #f04c64;
-}
-
-.tarefas li:hover .edit,
-.tarefas li:hover .delete {
-  color: #000;
+  background: #51c5de; /* Altera a cor de fundo ao passar o mouse */
 }
 
 .tarefas li .edit,
 .tarefas li .delete {
-  cursor: pointer;
-  transition: all 600ms;
+  margin-right: 15px; /* Margem à direita para os ícones */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  transition: all 600ms; /* Suaviza transições dos ícones */
+}
+
+.tarefas li .edit {
+  color: #51c5de; /* Cor inicial do ícone de edição */
+}
+
+.tarefas li .delete {
+  color: #f04c64; /* Cor inicial do ícone de exclusão */
+}
+
+.tarefas li:hover .edit,
+.tarefas li:hover .delete {
+  color: #000; /* Muda a cor dos ícones ao passar o mouse */
 }
 
 .tarefas li span {
-  display: flex;
-  align-items: center;
+  display: flex; /* Layout flexível para o texto e ícones */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
 }
-
