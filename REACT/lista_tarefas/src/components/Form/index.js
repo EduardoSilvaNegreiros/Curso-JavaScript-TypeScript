@@ -22,5 +22,5 @@ export default function Form({ handleChange, handleSubmit, novaTarefa }) {
 Form.propTypes = {
   handleChange: PropTypes.func.isRequired,
   handleSubmit: PropTypes.func.isRequired,
-  novaTarefa: PropTypes.func.isRequired,
+  novaTarefa  : PropTypes.func.isRequired,
 };

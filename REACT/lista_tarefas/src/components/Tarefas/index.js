@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaEdit, FaWindowClose } from 'react-icons/fa';
 
 export default function Tarefas() {
   return (

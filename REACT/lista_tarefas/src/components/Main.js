@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { FaEdit, FaWindowClose } from 'react-icons/fa'; // Ícones de edição e exclusão
 import Form from './Form'; // Componente de formulário
 import './Main.css'; // Estilos CSS
 
