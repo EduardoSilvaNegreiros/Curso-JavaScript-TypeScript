@@ -13,10 +13,10 @@ export default function Tarefas({ tarefas, handleEdit, handleDelete }) {
           <span>
             <FaEdit
               className="edit"
-              onClick={(e) => handleEdit(e, index)}
+              onClick={(e) => handleEdit(e, index)} // Edita a tarefa
             />
             <FaWindowClose
-              onClick={(e) => handleDelete(e, index)}
+              onClick={(e) => handleDelete(e, index)} // Deleta a tarefa
               className="delete"
             />
           </span>

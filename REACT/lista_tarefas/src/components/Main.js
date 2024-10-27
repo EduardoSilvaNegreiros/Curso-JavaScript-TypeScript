@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Form from './Form'; // Componente de formulário
+import Form from './Form';
 import Tarefas from './Tarefas';
 
-import './Main.css'; // Estilos CSS
+import './Main.css';
 
 export default class Main extends Component {
   // Estado inicial
