@@ -93,8 +93,8 @@ export default class Main extends Component {
 
         <Tarefas
           tarefas={tarefas}
-          handleEdit{this.handleEdit}
-          handleSubmit{this.handleSubmit}
+          handleEdit={this.handleEdit}
+          handleDelete={this.handleDelete}
         />
 
       </div>
