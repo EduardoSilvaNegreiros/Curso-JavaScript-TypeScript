@@ -91,6 +91,9 @@ export default class Main extends Component {
           novaTarefa={novaTarefa}
         />
 
+      <Tarefas />
+
+
       </div>
     );
   }
