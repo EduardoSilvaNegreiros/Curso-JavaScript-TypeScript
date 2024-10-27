@@ -91,8 +91,11 @@ export default class Main extends Component {
           novaTarefa={novaTarefa}
         />
 
-      <Tarefas />
-
+        <Tarefas
+          tarefas={tarefas}
+          handleEdit{this.handleEdit}
+          handleSubmit{this.handleSubmit}
+        />
 
       </div>
     );
