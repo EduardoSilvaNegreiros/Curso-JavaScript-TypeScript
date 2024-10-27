@@ -5,14 +5,14 @@ import './Form.css'; // Estilos CSS para o formulário.
 
 export default function Form({ handleChange, handleSubmit, novaTarefa }) {
   return (
-    <form onSubmit={handleSubmit} action="#" className="form"> {/* Envia o formulário ao chamar 'handleSubmit' */}
+    <form onSubmit={handleSubmit} action="#" className="form">
       <input
         onChange={handleChange} // Atualiza o estado com o novo valor do input
         type="text"
         value={novaTarefa} // Controla o valor do input
       />
-      <button type="submit"> {/* Botão de envio do formulário */}
-        <FaPlus /> {/* Ícone de adição */}
+      <button type="submit">
+        <FaPlus />
       </button>
     </form>
   );
@@ -22,5 +22,5 @@ export default function Form({ handleChange, handleSubmit, novaTarefa }) {
 Form.propTypes = {
   handleChange: PropTypes.func.isRequired,
   handleSubmit: PropTypes.func.isRequired,
-  novaTarefa  : PropTypes.func.isRequired,
+  novaTarefa: PropTypes.func.isRequired,
 };
