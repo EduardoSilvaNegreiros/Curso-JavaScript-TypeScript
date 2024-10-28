@@ -8,14 +8,14 @@ module.exports = {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
-  parser: '@babel/eslint-parser',
+  parser: '@babel/eslint-parser', // Atualize aqui
   parserOptions: {
+    requireConfigFile: false, // Adicione esta linha
     ecmaFeatures: {
       jsx: true,
     },
     ecmaVersion: 2018,
     sourceType: 'module',
-    requireConfigFile: false,
   },
   plugins: ['react', 'prettier', 'react-hooks'],
   rules: {
