@@ -9,6 +9,5 @@ export default function Login() {
       </h1>
       <p>Lorem ipsum dolor sit amet.</p>
     </>
-    
   );
 }
