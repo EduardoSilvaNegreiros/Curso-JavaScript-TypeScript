@@ -5,7 +5,7 @@ import { Tittle } from './styled';
 export default function Login() {
   return (
     <>
-      <Tittle>
+      <Tittle isRed={false}>
         Login
         <small>Oie</small>
       </Tittle>
