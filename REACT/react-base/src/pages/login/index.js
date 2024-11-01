@@ -1,12 +1,14 @@
 import React from 'react';
 
+import { Tittle } from './styled';
+
 export default function Login() {
   return (
     <>
-      <h1>
+      <Tittle>
         Login
         <small>Oie</small>
-      </h1>
+      </Tittle>
       <p>Lorem ipsum dolor sit amet.</p>
     </>
   );
