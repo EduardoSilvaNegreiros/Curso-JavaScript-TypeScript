@@ -1,4 +1,3 @@
-// Importa a biblioteca React, que é essencial para trabalhar com componentes em uma aplicação React.
 import React from 'react';
 
 import Login from './pages/Login';
