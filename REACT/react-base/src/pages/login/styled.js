@@ -1,4 +1,3 @@
-// Importa a função 'styled' da biblioteca 'styled-components', que permite criar componentes de estilo.
 import styled from 'styled-components';
 
 export const Tittle = styled.h1`
@@ -10,3 +9,5 @@ export const Tittle = styled.h1`
     color: #999;
   }
 `;
+
+export const Paragrafo = styled.p``;
