@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
   * {
@@ -10,6 +10,7 @@ export default createGlobalStyle`
 
   body {
     font-family: sans-serif;
+    background: #eee;
   }
 
   html, body, #root {
@@ -27,4 +28,10 @@ export default createGlobalStyle`
   ul {
     list-style: none;
   }
+`;
+
+export const Container = styled.section `
+  max-width: 360px;
+  background: #fff;
+  margin: 30px auto;
 `;
