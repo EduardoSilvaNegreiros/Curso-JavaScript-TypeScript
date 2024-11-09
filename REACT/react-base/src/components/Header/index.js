@@ -1,5 +1,5 @@
 import React from "react";
-import { } from 'react-icons';
+import { FaHome } from 'react-icons/fa';
 
 import { Nav } from "./styled";
 
