@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Login from './pages/Login';
+import Login from './pages/login';
 import GlobalStyles from './styles/GlobalStyles';
 
 function App() {
