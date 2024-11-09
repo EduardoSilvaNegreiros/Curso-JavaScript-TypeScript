@@ -39,7 +39,7 @@ export default createGlobalStyle`
   }
 `;
 
-export const Container = styled.section `
+export const Container = styled.section`
   max-width: 360px;
   background: #fff;
   margin: 30px auto;

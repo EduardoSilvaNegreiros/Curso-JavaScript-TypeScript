@@ -1,13 +1,18 @@
-import React from "react";
-import { FaHome } from 'react-icons/fa';
+import React from 'react';
+import { FaHome, FaUserAlt } from 'react-icons/fa';
 
-import { Nav } from "./styled";
+import { Nav } from './styled';
 
 export default function Header() {
   return (
     <Nav>
-      <a href="#"></a>
-      <a href="#"></a>
+      <a href="aa">
+        <FaHome size={24} />
+      </a>
+
+      <a href="bb">
+        <FaUserAlt size={24} />
+      </a>
     </Nav>
   );
 }
