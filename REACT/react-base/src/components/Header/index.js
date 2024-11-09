@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaHome, FaUserAlt } from 'react-icons/fa';
+import { FaHome, FaSignInAlt, FaUserAlt } from 'react-icons/fa';
 
 import { Nav } from './styled';
 
@@ -12,6 +12,10 @@ export default function Header() {
 
       <a href="bb">
         <FaUserAlt size={24} />
+      </a>
+
+      <a href="cc">
+        <FaSignInAlt size={24} />
       </a>
     </Nav>
   );
