@@ -12,6 +12,7 @@ export default createGlobalStyle`
   body {
     font-family: sans-serif;
     background: ${primaryDarkColor};
+    color: ${primaryColor};
   }
 
   html, body, #root {
@@ -25,10 +26,12 @@ export default createGlobalStyle`
     color: #fff;
     padding: 10px 20px;
     border-radius: 4px;
+    font-weight: 700;
   }
 
   a {
     text-decoration: none;
+    color: ${primaryColor};
   }
 
   ul {
