@@ -39,8 +39,14 @@ export default createGlobalStyle`
     list-style: none;
   }
 
+  body .Toastify .Toastify__toast-container .Toastify__toast--success {
+    background: ${colors.successColor};
+  }
 
-`;
+  body .Toastify .Toastify__toast-container .Toastify__toast--error {
+    background: ${colors.errorColor};
+  }
+  `;
 
 export const Container = styled.section`
   max-width: 360px;
