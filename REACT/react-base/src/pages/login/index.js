@@ -1,12 +1,9 @@
 import React from 'react';
 
 import { Container } from '../../styles/GlobalStyles';
-
 import { Tittle, Paragrafo } from './styled';
 
 export default function Login() {
-  React.useEffect(() => { }, []);
-
   return (
     <Container>
       <Tittle>
