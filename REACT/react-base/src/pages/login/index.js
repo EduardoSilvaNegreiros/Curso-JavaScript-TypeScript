@@ -11,7 +11,9 @@ export default function Login() {
     e.preventDefault();
 
     // Dispara uma ação para o Redux (mas não está enviando nenhuma ação atualmente)
-    dispatch();
+    dispatch({
+      type: 'BOTAO_CLICADO',
+    });
   }
 
   // Retorna o JSX do componente
