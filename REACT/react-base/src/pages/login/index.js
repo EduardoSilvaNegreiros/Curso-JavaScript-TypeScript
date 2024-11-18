@@ -14,6 +14,10 @@ export default function Login() {
     dispatch({
       type: 'BOTAO_CLICADO',
     });
+
+    dispatch({
+      type: 'BOTAO_CLICADO_2',
+    });
   }
 
   // Retorna o JSX do componente
