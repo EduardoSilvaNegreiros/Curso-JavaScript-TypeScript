@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 
 import { Container } from '../../styles/GlobalStyles';
 import { Tittle, Paragrafo } from './styled';
+import * as exampleAction from '../../store/modules/example/actions';
 
 export default function Login() {
   // Obtém a referência para a função dispatch do Redux
@@ -11,13 +12,7 @@ export default function Login() {
     e.preventDefault();
 
     // Dispara uma ação para o Redux (mas não está enviando nenhuma ação atualmente)
-    dispatch({
-      type: 'BOTAO_CLICADO',
-    });
-
-    dispatch({
-      type: 'BOTAO_CLICADO_2',
-    });
+    dispatch(exampleAction.clicaBotao());
   }
 
   // Retorna o JSX do componente
