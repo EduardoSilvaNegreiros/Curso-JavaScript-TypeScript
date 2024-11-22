@@ -1,5 +1,7 @@
-import { call, put } from 'redux-saga';
+// takeLatest serve para pegar o ultimo clique do usuário
+import { call, put, all, takeLatest } from 'redux-saga/effects';
 import * as actions from './actions';
+import * as types from '../types';
 
 const requisicao = () =>
   new Promise((resolve, reject) => {
@@ -11,6 +13,10 @@ const requisicao = () =>
 function* exampleRequest() {
   try {
     yield call(requisicao);
+    yield put(actions.clicaBotaoSuccess());
+  } catch (error) {
     yield put(actions.clicaBotaoFailure());
-  } catch (error) { }
+  }
 }
+
+export default all([takeLatest(types.BOTAO_CLICADO_REQUEST, exampleRequest)]);
