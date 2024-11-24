@@ -20,10 +20,13 @@ function esperaAi(msg, tempo) {
     });
 }
 
+
+
 const promises = [
     esperaAi('Promise 1', rand(1, 5)),
     esperaAi('Promise 2', rand(1, 5)),
     esperaAi('Promise 3', rand(1, 5)),
+
 ];
 
 
@@ -36,6 +39,10 @@ function baixarPagina() {
         return esperaAi('Baixei a pagina', 3000);
     }
 }
+
+baixarPagina()
+    .then(dadosPagina => console.log(dadosPagina))
+    .catch(e => console.log("Erro", e));
 
 
 baixarPagina()

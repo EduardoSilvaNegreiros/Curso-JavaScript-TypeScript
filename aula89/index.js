@@ -32,4 +32,3 @@ esperaAi('Conexão com o BD', rand(1, 3))
 .catch(e => console.log('ERRO', e));
 
 console.log('Exibido antes de promise');
-
