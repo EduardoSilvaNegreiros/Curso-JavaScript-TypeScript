@@ -18,6 +18,7 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "aula96": "file:",
     "core-js": "^3.37.1",
     "regenerator-runtime": "^0.14.1"
   }

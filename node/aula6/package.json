@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "aula6": "file:",
     "express": "^4.19.2"
   },
-  "devDependencies": {},
   "description": ""
 }
