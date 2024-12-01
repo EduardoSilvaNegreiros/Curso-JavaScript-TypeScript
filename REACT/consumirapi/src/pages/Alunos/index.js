@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import { Container } from '../../styles/GlobalStyles';
+import { AlunoContainer } from '../Aluno/styled';
 import axios from '../../services/axios';
 
 export default function Alunos() {
@@ -19,7 +20,13 @@ export default function Alunos() {
     <Container>
       <h1>Alunos</h1>
 
-      {alunos.map(aluno => aluno.nome)}
+      <AlunoContainer>
+        {alunos.map(aluno => (
+          <div key={String(aluno.id)}>
+            <img src={aluno.Fotos[0].url} alt="" />
+          </div>
+        ))}
+      </AlunoContainer>
     </Container>
   );
 }
