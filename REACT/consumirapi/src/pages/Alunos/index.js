@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { get } from 'lodash';
+import { FaUserCircle } from 'react-icons/fa';
 
 import { Container } from '../../styles/GlobalStyles';
 import { AlunoContainer } from '../Aluno/styled';
@@ -23,6 +25,7 @@ export default function Alunos() {
       <AlunoContainer>
         {alunos.map(aluno => (
           <div key={String(aluno.id)}>
+            {get(aluno, 'Fotos[0].url')}
             <img src={aluno.Fotos[0].url} alt="" />
           </div>
         ))}
