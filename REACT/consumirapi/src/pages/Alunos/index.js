@@ -25,8 +25,11 @@ export default function Alunos() {
       <AlunoContainer>
         {alunos.map(aluno => (
           <div key={String(aluno.id)}>
-            {get(aluno, 'Fotos[0].url')}
-            <img src={aluno.Fotos[0].url} alt="" />
+            {get(aluno, 'Fotos[0].url', false) ? (
+              <img src={aluno.Fotos[0].url} alt="" />
+            ) : (
+              <FaUserCircle size={36} />
+            )}
           </div>
         ))}
       </AlunoContainer>
