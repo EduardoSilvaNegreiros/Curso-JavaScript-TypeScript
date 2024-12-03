@@ -14,4 +14,3 @@ export const Nav = styled.nav`
     font-weight: bold;
   }
 `;
-

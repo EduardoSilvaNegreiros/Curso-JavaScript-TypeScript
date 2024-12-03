@@ -3,7 +3,7 @@ import { get } from 'lodash';
 import { FaUserCircle } from 'react-icons/fa';
 
 import { Container } from '../../styles/GlobalStyles';
-import { AlunoContainer } from '../Aluno/styled';
+import { AlunoContainer, ProfilePicture } from '../Aluno/styled';
 import axios from '../../services/axios';
 
 export default function Alunos() {
@@ -25,11 +25,13 @@ export default function Alunos() {
       <AlunoContainer>
         {alunos.map(aluno => (
           <div key={String(aluno.id)}>
-            {get(aluno, 'Fotos[0].url', false) ? (
-              <img src={aluno.Fotos[0].url} alt="" />
-            ) : (
-              <FaUserCircle size={36} />
-            )}
+            <ProfilePicture>
+              {get(aluno, 'Fotos[0].url', false) ? (
+                <img src={aluno.Fotos[0].url} alt="" />
+              ) : (
+                <FaUserCircle size={36} />
+              )}
+            </ProfilePicture>
           </div>
         ))}
       </AlunoContainer>

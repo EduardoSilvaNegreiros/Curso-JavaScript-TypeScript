@@ -8,7 +8,7 @@ module.exports = {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
-  parser: '@babel/eslint-parser',  // Alterado spara o parser correto
+  parser: '@babel/eslint-parser', // Alterado spara o parser correto
   parserOptions: {
     ecmaFeatures: {
       jsx: true,

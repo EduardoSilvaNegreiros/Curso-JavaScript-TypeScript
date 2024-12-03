@@ -6,12 +6,10 @@ import { Tittle, Paragrafo } from './styled';
 import * as exampleAction from '../../store/modules/example/actions';
 
 export default function Login() {
-  // Obtém a referência para a função dispatch do Redux
   const dispatch = useDispatch();
   function handleClick(e) {
     e.preventDefault();
 
-    // Dispara uma ação para o Redux (mas não está enviando nenhuma ação atualmente)
     dispatch(exampleAction.clicaBotaoRequest());
   }
 

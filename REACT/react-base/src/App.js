@@ -14,17 +14,11 @@ function App() {
   return (
     // Provedor do Redux que fornece o estado global para a aplicação
     <Provider store={store}>
-
-      {/* Garante a reidratação do estado persistido antes de renderizar */}
       <PersistGate persistor={persistor}>
-
-        {/* Configuração de rotas com histórico customizado */}
         <Router history={history}>
           <Header />
           <Routes />
-
           <GlobalStyles />
-          {/* Notificações (toasts) com tempo de exibição configurado */}
           <ToastContainer autoClose={3000} className="toast-container" />
         </Router>
       </PersistGate>
