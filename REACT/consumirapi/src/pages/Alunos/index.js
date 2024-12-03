@@ -32,6 +32,9 @@ export default function Alunos() {
                 <FaUserCircle size={36} />
               )}
             </ProfilePicture>
+
+            <span>{aluno.nome}</span>
+            <span>{aluno.email}</span>
           </div>
         ))}
       </AlunoContainer>
