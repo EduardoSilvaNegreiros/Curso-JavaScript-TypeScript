@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import { get } from 'lodash';
 import { FaUserCircle, FaEdit, FaWindowClose, FaExclamation } from 'react-icons/fa';
 
-import { toast } from 'react-toastify';
+
 import { Container } from '../../styles/GlobalStyles';
-import { AlunoContainer, ProfilePicture, NovoAluno } from './styled';
+import { AlunoContainer, ProfilePicture } from './styled';
 import axios from '../../services/axios';
 
-import Loading from '../../components/Loading';
 
 export default function Alunos() {
   const [alunos, setAlunos] = useState([]);
