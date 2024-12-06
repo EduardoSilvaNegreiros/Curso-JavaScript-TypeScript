@@ -22,20 +22,20 @@ export default function Register() {
           />
         </label>
 
-        <label htmlFor="nome">
-          Nome:
+        <label htmlFor="email">
+          Email:
           <input type="text" 
-          value={nome} 
-          onChange={e => setNome(e.target.value)} 
+          value={email} 
+          onChange={e => setEmail(e.target.value)} 
           placeholder='Seu email'
           />
         </label>
 
-        <label htmlFor="nome">
-          Nome:
+        <label htmlFor="senha">
+          Senha:
           <input type="text" 
-          value={nome} 
-          onChange={e => setNome(e.target.value)} 
+          value={snha} 
+          onChange={e => setSenha(e.target.value)} 
           placeholder='Sua senha'
           />
         </label>
