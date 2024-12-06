@@ -15,7 +15,10 @@ export default function Register() {
       <Form>
         <label htmlFor="nome">
           Nome:
-          <input type="text" />
+          <input type="text" 
+          value={nome} 
+          onChange={e => setNome(e.target.value)} 
+          />
         </label>
       </Form>
     </Container>
