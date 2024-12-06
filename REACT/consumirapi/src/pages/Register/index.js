@@ -18,6 +18,25 @@ export default function Register() {
           <input type="text" 
           value={nome} 
           onChange={e => setNome(e.target.value)} 
+          placeholder='Seu nome'
+          />
+        </label>
+
+        <label htmlFor="nome">
+          Nome:
+          <input type="text" 
+          value={nome} 
+          onChange={e => setNome(e.target.value)} 
+          placeholder='Seu email'
+          />
+        </label>
+
+        <label htmlFor="nome">
+          Nome:
+          <input type="text" 
+          value={nome} 
+          onChange={e => setNome(e.target.value)} 
+          placeholder='Sua senha'
           />
         </label>
       </Form>
