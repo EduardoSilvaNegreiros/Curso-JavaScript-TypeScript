@@ -24,7 +24,7 @@ export default function Register() {
 
         <label htmlFor="email">
           Email:
-          <input type="text" 
+          <input type="email" 
           value={email} 
           onChange={e => setEmail(e.target.value)} 
           placeholder='Seu email'
@@ -33,8 +33,8 @@ export default function Register() {
 
         <label htmlFor="senha">
           Senha:
-          <input type="text" 
-          value={snha} 
+          <input type="password" 
+          value={senha} 
           onChange={e => setSenha(e.target.value)} 
           placeholder='Sua senha'
           />
