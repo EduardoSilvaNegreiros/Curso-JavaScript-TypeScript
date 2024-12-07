@@ -6,7 +6,7 @@ import { Form } from './styled';
 export default function Register() {
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
-  const [senha, setSenha] = useState('');
+  const [password, setPassword] = useState('');
 
   return (
     <Container>
@@ -31,12 +31,12 @@ export default function Register() {
           />
         </label>
 
-        <label htmlFor="senha">
-          Senha:
+        <label htmlFor="password">
+          password:
           <input type="password" 
-          value={senha} 
-          onChange={e => setSenha(e.target.value)} 
-          placeholder='Sua senha'
+          value={password} 
+          onChange={e => setPassword(e.target.value)} 
+          placeholder='Sua password'
           />
         </label>
       </Form>
