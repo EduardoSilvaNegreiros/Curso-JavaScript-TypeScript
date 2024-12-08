@@ -36,7 +36,7 @@ export default function Register() {
           <input type="password" 
           value={password} 
           onChange={e => setPassword(e.target.value)} 
-          placeholder='Sua password'
+          placeholder='Sua senha'
           />
         </label>
       </Form>
