@@ -15,30 +15,32 @@ export default function Register() {
       <Form>
         <label htmlFor="nome">
           Nome:
-          <input type="text" 
-          value={nome} 
-          onChange={e => setNome(e.target.value)} 
-          placeholder='Seu nome'
+          <input type="text"
+            value={nome}
+            onChange={e => setNome(e.target.value)}
+            placeholder='Seu nome'
           />
         </label>
 
         <label htmlFor="email">
           Email:
-          <input type="email" 
-          value={email} 
-          onChange={e => setEmail(e.target.value)} 
-          placeholder='Seu email'
+          <input type="email"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+            placeholder='Seu email'
           />
         </label>
 
         <label htmlFor="password">
           Senha:
-          <input type="password" 
-          value={password} 
-          onChange={e => setPassword(e.target.value)} 
-          placeholder='Sua senha'
+          <input type="password"
+            value={password}
+            onChange={e => setPassword(e.target.value)}
+            placeholder='Sua senha'
           />
         </label>
+
+        <button type='submit'>Criar minha conta</button>
       </Form>
     </Container>
   );
