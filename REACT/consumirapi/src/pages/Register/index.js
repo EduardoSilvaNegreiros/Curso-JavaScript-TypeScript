@@ -10,8 +10,12 @@ export default function Register() {
 
   function handleSubmit(e) {
     e.preventDefault();
+    let formErrors = false;
 
-    console.log(nome);
+    if(nome.length < 3 || nome.length > 255) {
+      formErrors = true;
+      
+    }
   }
 
   return (
