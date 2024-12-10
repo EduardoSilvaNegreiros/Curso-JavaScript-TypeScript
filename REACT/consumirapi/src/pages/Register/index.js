@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 import { Container } from '../../styles/GlobalStyles';
 import { Form } from './styled';
@@ -14,7 +15,7 @@ export default function Register() {
 
     if(nome.length < 3 || nome.length > 255) {
       formErrors = true;
-      
+      toast.error('Nome deve ter entre 3 e 255 caracteres');
     }
   }
 
