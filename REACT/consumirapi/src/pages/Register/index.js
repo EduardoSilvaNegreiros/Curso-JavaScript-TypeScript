@@ -11,7 +11,7 @@ export default function Register() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
     let formErrors = false;
 
@@ -31,6 +31,12 @@ export default function Register() {
     }
 
     if (formErrors) return;
+
+    try {
+
+    } catch(e) {
+
+    }
   }
 
   return (
