@@ -4,6 +4,7 @@ import { isEmail } from 'validator';
 
 import { Container } from '../../styles/GlobalStyles';
 import { Form } from './styled';
+import axios from '../../services/axios';
 
 export default function Register() {
   const [nome, setNome] = useState('');
@@ -28,6 +29,8 @@ export default function Register() {
       formErrors = true;
       toast.error('Senha deve ter entre 6 e 50 caracteres');
     }
+
+    if (formErrors) return;
   }
 
   return (
