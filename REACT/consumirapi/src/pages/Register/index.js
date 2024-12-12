@@ -33,7 +33,7 @@ export default function Register() {
     if (formErrors) return;
 
     try {
-
+      const response = await axios.post();
     } catch(e) {
 
     }
