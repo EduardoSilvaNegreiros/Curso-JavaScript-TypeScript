@@ -42,7 +42,8 @@ export default function Register() {
 
       console.log(response.data);
     } catch (e) {
-      const status = get(e, 'response.status');
+      const status = get(e, 'response.status', 0);
+      const errors = get(e, 'response.status');
       consolee.log(status);
     }
   }
