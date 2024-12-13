@@ -33,10 +33,14 @@ export default function Register() {
     if (formErrors) return;
 
     try {
-      const response = await axios.post();
-    } catch(e) {
+      const response = await axios.post('/users/', {
+        nome,
+        password,
+        email,
+      });
 
-    }
+      console.log(response.data);
+    } catch (e) {}
   }
 
   return (
@@ -46,32 +50,35 @@ export default function Register() {
       <Form onSubmit={handleSubmit}>
         <label htmlFor="nome">
           Nome:
-          <input type="text"
+          <input
+            type="text"
             value={nome}
             onChange={e => setNome(e.target.value)}
-            placeholder='Seu nome'
+            placeholder="Seu nome"
           />
         </label>
 
         <label htmlFor="email">
           Email:
-          <input type="email"
+          <input
+            type="email"
             value={email}
             onChange={e => setEmail(e.target.value)}
-            placeholder='Seu email'
+            placeholder="Seu email"
           />
         </label>
 
         <label htmlFor="password">
           Senha:
-          <input type="password"
+          <input
+            type="password"
             value={password}
             onChange={e => setPassword(e.target.value)}
-            placeholder='Sua senha'
+            placeholder="Sua senha"
           />
         </label>
 
-        <button type='submit'>Criar minha conta</button>
+        <button type="submit">Criar minha conta</button>
       </Form>
     </Container>
   );
