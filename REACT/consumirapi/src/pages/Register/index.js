@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 import { isEmail } from 'validator';
+import { get } from 'lodash';
 
 import { Container } from '../../styles/GlobalStyles';
 import { Form } from './styled';
@@ -40,7 +41,9 @@ export default function Register() {
       });
 
       console.log(response.data);
-    } catch (e) {}
+    } catch (e) {
+
+    }
   }
 
   return (
