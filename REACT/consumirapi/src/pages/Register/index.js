@@ -44,7 +44,9 @@ export default function Register() {
     } catch (e) {
       const status = get(e, 'response.status', 0);
       const errors = get(e, 'response.data.erros', []);
-      console.log(status);
+      
+
+      erros.map(error => toast.error(error));
     }
   }
 
