@@ -41,11 +41,11 @@ export default function Register() {
         email,
       });
 
-      console.log(response.data);
+      toast.success('Você fez seu cadastro');
+      history.push('/');
     } catch (e) {
-      const status = get(e, 'response.status', 0);
       const errors = get(e, 'response.data.erros', []);
-      
+
 
       erros.map(error => toast.error(error));
     }
