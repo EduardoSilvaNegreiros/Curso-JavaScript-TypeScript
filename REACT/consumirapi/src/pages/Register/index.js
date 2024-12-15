@@ -43,8 +43,8 @@ export default function Register() {
 
       toast.success('Você fez seu cadastro');
       history.push('/');
-    } catch (e) {
-      const errors = get(e, 'response.data.erros', []);
+    } catch (err) {
+      const errors = get(err, 'response.data.erros', []);
 
       erros.map(error => toast.error(error));
     }
