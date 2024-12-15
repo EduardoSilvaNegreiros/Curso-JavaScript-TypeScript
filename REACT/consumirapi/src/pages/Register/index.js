@@ -35,7 +35,7 @@ export default function Register() {
     if (formErrors) return;
 
     try {
-      const response = await axios.post('/users/', {
+      await axios.post('/users/', {
         nome,
         password,
         email,
@@ -45,7 +45,6 @@ export default function Register() {
       history.push('/');
     } catch (e) {
       const errors = get(e, 'response.data.erros', []);
-
 
       erros.map(error => toast.error(error));
     }
