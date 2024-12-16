@@ -4,6 +4,8 @@ import { Container } from '../../styles/GlobalStyles';
 import { Form } from './styled';
 
 export default function Login() {
+  const [email, setEmail] = React.useState('');
+
   return (
     <Container>
       <h1>Login</h1>
