@@ -11,6 +11,25 @@ export default function Login() {
 
   const handleSubmit = e => {
     e.preventDefault();
+
+    let formErrors = false;
+
+    if (nome.length < 3 || nome.length > 255) {
+      formErrors = true;
+      toast.error('Nome deve ter entre 3 e 255 caracteres');
+    }
+
+    if (isEmail(email)) {
+      formErrors = true;
+      toast.error('E-mail inválido.');
+    }
+
+    if (password.length < 6 || password.length > 50) {
+      formErrors = true;
+      toast.error('Senha deve ter entre 6 e 50 caracteres');
+    }
+
+    if (formErrors) return;
   };
 
   return (
