@@ -25,6 +25,8 @@ export default function Login() {
           onChange={e => setPassword(e.target.value)}
           placeholder="Sua senha"
         />
+
+        <button type='submit'>Acessar</button>
       </Form>
     </Container>
   );
