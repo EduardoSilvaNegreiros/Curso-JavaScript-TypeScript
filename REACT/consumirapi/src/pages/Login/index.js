@@ -1,4 +1,6 @@
 import React from 'react';
+import { toast } from 'react-toastify';
+import { isEmail } from 'validator';
 
 import { Container } from '../../styles/GlobalStyles';
 import { Form } from './styled';
@@ -9,7 +11,7 @@ export default function Login() {
 
   const handleSubmit = e => {
     e.preventDefault();
-  }
+  };
 
   return (
     <Container>
@@ -30,7 +32,7 @@ export default function Login() {
           placeholder="Sua senha"
         />
 
-        <button type='submit'>Acessar</button>
+        <button type="submit">Acessar</button>
       </Form>
     </Container>
   );
