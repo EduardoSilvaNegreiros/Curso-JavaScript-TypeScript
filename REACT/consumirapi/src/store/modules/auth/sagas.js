@@ -4,6 +4,6 @@ import { toast } from 'react-toastify';
 import * as actions from './actions';
 import * as types from '../types';
 
-function* exampleRequest() {}
+function* loginRequest(payload) {}
 
-export default all([takeLatest(types.BOTAO_CLICADO_REQUEST, exampleRequest)]);
+export default all([takeLatest(types.LOGIN_REQUEST, loginRequest)]);
