@@ -4,6 +4,8 @@ import { toast } from 'react-toastify';
 import * as actions from './actions';
 import * as types from '../types';
 
-function* loginRequest(payload) {}
+function* loginRequest(payload) {
+  console.log('SAGA', payload);
+}
 
 export default all([takeLatest(types.LOGIN_REQUEST, loginRequest)]);
