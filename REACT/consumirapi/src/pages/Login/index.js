@@ -11,7 +11,7 @@ import * as actions from '../../store/modules/auth/actions';
 export default function Login(props) {
   const dispatch = useDispatch();
 
-  const prevPath = get(props, 'location.state.prevPath');
+  const prevPath = get(props, 'location.state.prevPath', '/');
 
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
@@ -33,7 +33,7 @@ export default function Login(props) {
 
     if (formErrors) return;
 
-    dispatch(actions.loginRequest({ email, password }));
+    dispatch(actions.loginRequest({ email, password, prevPath }));
   };
 
   return (
