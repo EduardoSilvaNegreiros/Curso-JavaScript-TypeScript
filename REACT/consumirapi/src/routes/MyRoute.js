@@ -2,10 +2,11 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 
 // 2️⃣ Definição do Componente MyRoute
 export default function MyRoute({ component: Component, isClosed, ...rest }) {
-  const isLoggedIn = false;
+  const isLoggedIn = useSelector(state => state.auth.isLoggedIn);
 
   // 3️⃣ Verificação de Autenticação
   if (isClosed && !isLoggedIn) {
@@ -13,7 +14,7 @@ export default function MyRoute({ component: Component, isClosed, ...rest }) {
       <Redirect
         to={{
           pathname: '/login',
-          state: { prevPath: rest.location.pathname }, // Salva o caminho de onde o usuário estava antes
+          state: { prevPath: rest.location.pathname },
         }}
       />
     );
