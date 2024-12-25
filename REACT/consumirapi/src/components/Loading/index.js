@@ -1,0 +1,20 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+
+export default function Loading({ isLoading }) {
+  if (!isLoading) return <></>;
+  return (
+    <Container>
+      <div></div>
+      <span>Carregando...</span>
+    </Container>
+  );
+}
+
+Loading.defaultProps = {
+  isLoading: false,
+};
+
+Loading.PropTypes = {
+  isLoading: PropTypes.bool,
+};
