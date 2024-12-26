@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import { get } from 'lodash';
-import { FaUserCircle, FaEdit, FaWindowClose, FaExclamation } from 'react-icons/fa';
-
+import {
+  FaUserCircle,
+  FaEdit,
+  FaWindowClose,
+  FaExclamation,
+} from 'react-icons/fa';
 
 import { Container } from '../../styles/GlobalStyles';
 import { AlunoContainer, ProfilePicture } from './styled';
 import axios from '../../services/axios';
 
+import Loading from '../../components/Loading';
 
 export default function Alunos() {
   const [alunos, setAlunos] = useState([]);
@@ -24,17 +29,20 @@ export default function Alunos() {
     getData();
   }, []);
 
-
   return (
     <Container>
-
+      <Loading isLoading />
       <h1>Alunos</h1>
 
       <AlunoContainer>
         {alunos.map((aluno, index) => (
           <div key={String(aluno.id)}>
             <ProfilePicture>
-              {get(aluno, 'Fotos[0].url', false) ? <img src={aluno.Fotos[0].url} alt="" /> : <FaUserCircle size={36} />}
+              {get(aluno, 'Fotos[0].url', false) ? (
+                <img src={aluno.Fotos[0].url} alt="" />
+              ) : (
+                <FaUserCircle size={36} />
+              )}
             </ProfilePicture>
 
             <span>{aluno.nome}</span>
@@ -52,7 +60,7 @@ export default function Alunos() {
               size={16}
               display="none"
               cursor="pointer"
-              onClick={(e) => handleDelete(e, aluno.id, index)}
+              onClick={e => handleDelete(e, aluno.id, index)}
             />
           </div>
         ))}
