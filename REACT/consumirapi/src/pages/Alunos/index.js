@@ -31,7 +31,7 @@ export default function Alunos() {
 
   return (
     <Container>
-      <Loading isLoading />
+      <Loading isLoading={isLoading} />
       <h1>Alunos</h1>
 
       <AlunoContainer>
