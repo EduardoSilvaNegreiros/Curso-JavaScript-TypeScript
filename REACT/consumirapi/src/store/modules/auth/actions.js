@@ -3,20 +3,27 @@ import * as types from '../types';
 export function loginRequest(payload) {
   return {
     type: types.LOGIN_REQUEST,
-    payload
+    payload,
   };
 }
 
 export function loginSuccess(payload) {
   return {
     type: types.LOGIN_SUCCESS,
-    payload
+    payload,
   };
 }
 
 export function loginFailure(payload) {
   return {
     type: types.LOGIN_FAILURE,
-    payload
+    payload,
+  };
+}
+
+export function registerRequest(payload) {
+  return {
+    type: types.REGISTER_REQUEST,
+    payload,
   };
 }
