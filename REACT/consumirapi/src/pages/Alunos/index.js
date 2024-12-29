@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import { get } from 'lodash';
-import {
-  FaUserCircle,
-  FaEdit,
-  FaWindowClose,
-  FaExclamation,
-} from 'react-icons/fa';
+import { FaUserCircle, FaEdit, FaExclamation } from 'react-icons/fa';
 
+import { toast } from 'react-toastify';
 import { Container } from '../../styles/GlobalStyles';
 import { AlunoContainer, ProfilePicture } from './styled';
 import axios from '../../services/axios';
@@ -29,6 +25,36 @@ export default function Alunos() {
     getData();
   }, []);
 
+  const handleDeleteAsk = e => {
+    e.preventDefault();
+    const exclamation = e.currentTarget.nextSibling;
+    exclamation.setAttribute('display', 'block');
+    e.currentTarget.remove();
+  };
+
+  const handleDelete = async (e, id, index) => {
+    e.persist();
+
+    try {
+      setIsLoading(true);
+      await axios.delete(`/alunos/${id}`);
+      const novosAlunos = [...alunos];
+      novosAlunos.splice(index, 1);
+      setAlunos(novosAlunos);
+      setIsLoading(false);
+    } catch (err) {
+      const status = get(err, 'response.status', 0);
+
+      if (status === 401) {
+        toast.error('Você precisa fazer login!');
+      } else {
+        toast.error('Ocorreu um erro ao excluir aluno');
+      }
+
+      setIsLoading(false);
+    }
+  };
+
   return (
     <Container>
       <Loading isLoading={isLoading} />
@@ -48,12 +74,8 @@ export default function Alunos() {
             <span>{aluno.nome}</span>
             <span>{aluno.email}</span>
 
-            <Link to={`/aluno/${aluno.id}/edit`}>
+            <Link onClick={handleDeleteAsk} to={`/aluno/${aluno.id}/edit`}>
               <FaEdit size={16} />
-            </Link>
-
-            <Link onClick={handleDeleteAsk} to={`/aluno/${aluno.id}/delete`}>
-              <FaWindowClose size={16} />
             </Link>
 
             <FaExclamation
