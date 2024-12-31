@@ -6,6 +6,7 @@ import { Home } from "./components/Home";
 import { About } from "./components/About";
 import { Menu } from "./components/Menu";
 import { Post } from "./components/Post";
+import { Redirect } from "./components/Redirect";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -16,6 +17,7 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/about" element={<About />} />
         <Route path="/posts" element={<Post />} />
         <Route path="/posts/:id" element={<Post />} />
+        <Route path="/redirect" element={<Redirect />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
