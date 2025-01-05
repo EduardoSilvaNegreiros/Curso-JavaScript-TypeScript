@@ -1,7 +1,7 @@
 /* eslint-disable */
 // Tipos básicos (aqui ocorre inferência de tipos)
 
-let name: string = 'Eduardo'; // Qualquer tipo de string
+export let name: string = 'Eduardo'; // Qualquer tipo de string
 let age: number = 18; // Qualquer tipo de numero
 let adult: boolean = true; // true ou false
 let symbol: symbol = Symbol('Quaquer simbolo'); // symbol
@@ -22,7 +22,7 @@ let person: { name: string; age: number; adult?: boolean } = {
 
 // Funções
 // Tipagem dos parametros e função
-function soma (x: number, y: number): number {
+function soma(x: number, y: number): number {
   return x + y;
 }
 const result = soma(2, 2);

@@ -14,4 +14,4 @@ router.post('/', alunoController.store); // Cria aluno
 router.put('/', alunoController.update); // Atualiza aluno
 router.delete('/', alunoController.delete); // Deleta aluno
 
-export default router; // Exporta o roteador
+export default router;

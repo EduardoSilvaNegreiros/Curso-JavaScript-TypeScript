@@ -2,28 +2,22 @@
 // const numerosDobrados = numeros.map(valor => valor * 2);
 // console.log(numerosDobrados);
 
-
 const pessoas = [
-    { nome: 'Eduardo', idade: 18 },
-    { nome: 'Rafaela', idade: 57 },
-    { nome: 'Gabriel', idade: 11 },
-    { nome: 'Alexandre', idade: 30 },
-    { nome: 'Luiz', idade: 20 },
-    { nome: 'Gargamel', idade: 60 },
-]
+    { nome: "Eduardo", idade: 18 },
+    { nome: "Rafaela", idade: 57 },
+    { nome: "Gabriel", idade: 11 },
+    { nome: "Alexandre", idade: 30 },
+    { nome: "Luiz", idade: 20 },
+    { nome: "Gargamel", idade: 60 },
+];
 
-const nomeDasPessoas = pessoas.map(obj => obj.nome);
-const idadeDasPessoas = pessoas.map(obj => ({ idade: obj.idade }));
+const nomeDasPessoas = pessoas.map((obj) => obj.nome);
+const idadeDasPessoas = pessoas.map((obj) => ({ idade: obj.idade }));
 const comIds = pessoas.map((obj, indice) => {
     const newObj = { ...obj };
-    newObj.id = indice
-    return newObj
+    newObj.id = indice;
+    return newObj;
 });
-
-
-
-
-
 
 // console.log(nomeDasPessoas);
 // console.log(idadeDasPessoas);
