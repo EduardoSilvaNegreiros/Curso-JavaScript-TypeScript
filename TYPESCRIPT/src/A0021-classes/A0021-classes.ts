@@ -34,6 +34,10 @@ const enterprise1 = new Enterprise('Udemy', '11.111.111/0001-11');
 const collaborator1 = new Collaborator('Edu', 'Negreiros');
 const collaborator2 = new Collaborator('Luiz', 'Otávio');
 const collaborator3 = new Collaborator('Syang', 'Sousa');
+enterprise1.addCollaborator({
+  name: 'Eduardo',
+  surname: 'Negreiros',
+});
 
 enterprise1.addCollaborator(collaborator1);
 enterprise1.addCollaborator(collaborator2);
