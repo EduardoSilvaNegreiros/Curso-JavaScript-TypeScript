@@ -3,7 +3,7 @@ export class Enterprise {
   protected readonly collaborators: Collaborator[] = [];
   private readonly cnpj: string;
 
-  // Construtor da classe
+  // // Construtor da classe
   constructor(name: string, cnpj: string) {
     this.name = name;
     this.cnpj = cnpj;
