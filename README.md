@@ -59,8 +59,9 @@ Este curso me proporcionou um conhecimento profundo e prático em diversas tecno
 ![Captura de tela 2025-02-27 165130](https://github.com/user-attachments/assets/31849316-1fb9-4c43-8056-a530e054c83e)  
 ![Captura de tela 2025-03-05 172311](https://github.com/user-attachments/assets/dce41184-5709-4aa0-a4e6-a93c86637407)
 ![Captura de tela 2025-03-05 172242](https://github.com/user-attachments/assets/859dd2ac-d439-428c-94e9-b645bf3d5631)
+![Captura de tela 2025-03-05 172738](https://github.com/user-attachments/assets/baf52ec6-2455-45ce-bc45-1a50ab20e5ec)
+![Captura de tela 2025-03-05 172659](https://github.com/user-attachments/assets/1f67a52e-8603-4220-9a86-715ab7a28f3d)
 
----
 
 ## ✍️ Autor  
 
